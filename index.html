@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prince Garg | Full Stack Developer</title>
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3476834776553596"
+    crossorigin="anonymous"></script>
   <style>
     :root {
       --primary: #6366f1;
@@ -56,7 +60,12 @@
     }
 
     /* GPU Acceleration for smooth animations */
-    .preloader, .cursor, .cursor-dot, .navbar, .hero-gradient, .hero-orb {
+    .preloader,
+    .cursor,
+    .cursor-dot,
+    .navbar,
+    .hero-gradient,
+    .hero-orb {
       will-change: transform, opacity;
       transform: translateZ(0);
       backface-visibility: hidden;
@@ -91,22 +100,33 @@
     ::-webkit-scrollbar {
       width: 8px;
     }
+
     ::-webkit-scrollbar-track {
       background: var(--darker);
     }
+
     ::-webkit-scrollbar-thumb {
       background: var(--gradient-1);
       border-radius: 10px;
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: var(--primary-light);
     }
 
     /* Gradient Animation */
     @keyframes gradient-shift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     /* Magnetic Button Base */
@@ -169,49 +189,114 @@
 
     /* Floating Animation */
     @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-20px) rotate(5deg); }
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(5deg);
+      }
     }
 
     /* Morph Animation */
     @keyframes morph {
-      0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-      50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+
+      0%,
+      100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
     }
 
     /* Scale In Animation */
     @keyframes scaleIn {
-      from { transform: scale(0); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     /* Slide Up Animation */
     @keyframes slideUp {
-      from { transform: translateY(100px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     /* Blur In Animation */
     @keyframes blurIn {
-      from { filter: blur(20px); opacity: 0; }
-      to { filter: blur(0); opacity: 1; }
+      from {
+        filter: blur(20px);
+        opacity: 0;
+      }
+
+      to {
+        filter: blur(0);
+        opacity: 1;
+      }
     }
 
     /* Rotate In Animation */
     @keyframes rotateIn {
-      from { transform: rotate(-180deg) scale(0); opacity: 0; }
-      to { transform: rotate(0) scale(1); opacity: 1; }
+      from {
+        transform: rotate(-180deg) scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+      }
     }
 
     /* Stagger Delay Helper */
-    [data-delay="1"] { animation-delay: 0.1s !important; }
-    [data-delay="2"] { animation-delay: 0.2s !important; }
-    [data-delay="3"] { animation-delay: 0.3s !important; }
-    [data-delay="4"] { animation-delay: 0.4s !important; }
-    [data-delay="5"] { animation-delay: 0.5s !important; }
-    [data-delay="6"] { animation-delay: 0.6s !important; }
-    [data-delay="7"] { animation-delay: 0.7s !important; }
-    [data-delay="8"] { animation-delay: 0.8s !important; }
+    [data-delay="1"] {
+      animation-delay: 0.1s !important;
+    }
+
+    [data-delay="2"] {
+      animation-delay: 0.2s !important;
+    }
+
+    [data-delay="3"] {
+      animation-delay: 0.3s !important;
+    }
+
+    [data-delay="4"] {
+      animation-delay: 0.4s !important;
+    }
+
+    [data-delay="5"] {
+      animation-delay: 0.5s !important;
+    }
+
+    [data-delay="6"] {
+      animation-delay: 0.6s !important;
+    }
+
+    [data-delay="7"] {
+      animation-delay: 0.7s !important;
+    }
+
+    [data-delay="8"] {
+      animation-delay: 0.8s !important;
+    }
 
     /* ==================== PRELOADER ==================== */
     .preloader {
@@ -234,11 +319,12 @@
     }
 
     @keyframes preloaderExit {
-      0% { 
+      0% {
         opacity: 1;
         transform: scale(1);
       }
-      100% { 
+
+      100% {
         opacity: 0;
         transform: scale(1.1);
         visibility: hidden;
@@ -287,10 +373,23 @@
     }
 
     @keyframes preloaderFloat {
-      0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
-      25% { transform: translate(50px, -30px) scale(1.1) rotate(5deg); }
-      50% { transform: translate(30px, 50px) scale(1.2) rotate(-5deg); }
-      75% { transform: translate(-30px, 20px) scale(1.05) rotate(3deg); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+      }
+
+      25% {
+        transform: translate(50px, -30px) scale(1.1) rotate(5deg);
+      }
+
+      50% {
+        transform: translate(30px, 50px) scale(1.2) rotate(-5deg);
+      }
+
+      75% {
+        transform: translate(-30px, 20px) scale(1.05) rotate(3deg);
+      }
     }
 
     /* Particle Grid */
@@ -298,15 +397,20 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-image: 
+      background-image:
         radial-gradient(circle at 2px 2px, rgba(99, 102, 241, 0.3) 1px, transparent 1px);
       background-size: 50px 50px;
       animation: particleMove 20s linear infinite;
     }
 
     @keyframes particleMove {
-      0% { background-position: 0 0; }
-      100% { background-position: 50px 50px; }
+      0% {
+        background-position: 0 0;
+      }
+
+      100% {
+        background-position: 50px 50px;
+      }
     }
 
     /* Floating Shapes */
@@ -353,8 +457,17 @@
     }
 
     @keyframes shapeFloat {
-      0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
-      50% { transform: translateY(-20px) rotate(180deg); opacity: 0.6; }
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.3;
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(180deg);
+        opacity: 0.6;
+      }
     }
 
     .preloader-content {
@@ -380,22 +493,33 @@
     }
 
     @keyframes logoReveal {
-      0% { 
-        opacity: 0; 
+      0% {
+        opacity: 0;
         transform: translateY(100px) rotateX(45deg) scale(0.8);
         filter: blur(10px);
       }
-      100% { 
-        opacity: 1; 
+
+      100% {
+        opacity: 1;
         transform: translateY(0) rotateX(0deg) scale(1);
         filter: blur(0);
       }
     }
 
     @keyframes logo3D {
-      0%, 100% { transform: rotateY(0deg) rotateX(0deg); }
-      25% { transform: rotateY(5deg) rotateX(2deg); }
-      75% { transform: rotateY(-5deg) rotateX(-2deg); }
+
+      0%,
+      100% {
+        transform: rotateY(0deg) rotateX(0deg);
+      }
+
+      25% {
+        transform: rotateY(5deg) rotateX(2deg);
+      }
+
+      75% {
+        transform: rotateY(-5deg) rotateX(-2deg);
+      }
     }
 
     .preloader-subtitle {
@@ -409,13 +533,14 @@
     }
 
     @keyframes subtitleReveal {
-      0% { 
-        opacity: 0; 
+      0% {
+        opacity: 0;
         transform: translateY(30px);
         letter-spacing: 1em;
       }
-      100% { 
-        opacity: 1; 
+
+      100% {
+        opacity: 1;
         transform: translateY(0);
         letter-spacing: 0.5em;
       }
@@ -446,17 +571,53 @@
     }
 
     @keyframes glitch-1 {
-      0%, 80%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
-      85% { clip-path: inset(20% 0 60% 0); transform: translate(-3px, 2px); }
-      90% { clip-path: inset(50% 0 30% 0); transform: translate(3px, -2px); }
-      95% { clip-path: inset(70% 0 10% 0); transform: translate(-2px, 1px); }
+
+      0%,
+      80%,
+      100% {
+        clip-path: inset(0 0 0 0);
+        transform: translate(0);
+      }
+
+      85% {
+        clip-path: inset(20% 0 60% 0);
+        transform: translate(-3px, 2px);
+      }
+
+      90% {
+        clip-path: inset(50% 0 30% 0);
+        transform: translate(3px, -2px);
+      }
+
+      95% {
+        clip-path: inset(70% 0 10% 0);
+        transform: translate(-2px, 1px);
+      }
     }
 
     @keyframes glitch-2 {
-      0%, 80%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
-      82% { clip-path: inset(30% 0 50% 0); transform: translate(2px, -2px); }
-      88% { clip-path: inset(10% 0 70% 0); transform: translate(-3px, 2px); }
-      94% { clip-path: inset(60% 0 20% 0); transform: translate(2px, -1px); }
+
+      0%,
+      80%,
+      100% {
+        clip-path: inset(0 0 0 0);
+        transform: translate(0);
+      }
+
+      82% {
+        clip-path: inset(30% 0 50% 0);
+        transform: translate(2px, -2px);
+      }
+
+      88% {
+        clip-path: inset(10% 0 70% 0);
+        transform: translate(-3px, 2px);
+      }
+
+      94% {
+        clip-path: inset(60% 0 20% 0);
+        transform: translate(2px, -1px);
+      }
     }
 
     .preloader-counter {
@@ -489,8 +650,15 @@
     }
 
     @keyframes pulse {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 1; }
+
+      0%,
+      100% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
     }
 
     .preloader-bar {
@@ -524,8 +692,15 @@
     }
 
     @keyframes progressGlow {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 1; }
+
+      0%,
+      100% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
     }
 
     .preloader-line {
@@ -566,26 +741,45 @@
     }
 
     @keyframes lineDraw {
-      0% { width: 0; height: 0; }
-      100% { width: 100%; height: 100%; }
+      0% {
+        width: 0;
+        height: 0;
+      }
+
+      100% {
+        width: 100%;
+        height: 100%;
+      }
     }
 
-    .preloader-line.top, .preloader-line.bottom {
+    .preloader-line.top,
+    .preloader-line.bottom {
       animation-name: lineDrawHorizontal;
     }
 
-    .preloader-line.left, .preloader-line.right {
+    .preloader-line.left,
+    .preloader-line.right {
       animation-name: lineDrawVertical;
     }
 
     @keyframes lineDrawHorizontal {
-      0% { width: 0; }
-      100% { width: 100%; }
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
     }
 
     @keyframes lineDrawVertical {
-      0% { height: 0; }
-      100% { height: 100%; }
+      0% {
+        height: 0;
+      }
+
+      100% {
+        height: 100%;
+      }
     }
 
     /* ==================== ADVANCED CURSOR ==================== */
@@ -778,10 +972,23 @@
     }
 
     @keyframes float {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      25% { transform: translate(30px, -30px) scale(1.1); }
-      50% { transform: translate(-20px, 20px) scale(0.95); }
-      75% { transform: translate(20px, 30px) scale(1.05); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      25% {
+        transform: translate(30px, -30px) scale(1.1);
+      }
+
+      50% {
+        transform: translate(-20px, 20px) scale(0.95);
+      }
+
+      75% {
+        transform: translate(20px, 30px) scale(1.05);
+      }
     }
 
     .hero-content {
@@ -813,8 +1020,15 @@
     }
 
     @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
     }
 
     .hero-title {
@@ -837,8 +1051,15 @@
     }
 
     @keyframes gradient-shift {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
     }
 
     .hero-subtitle {
@@ -960,23 +1181,53 @@
     }
 
     @keyframes scroll-dot {
-      0%, 100% { transform: translateY(0); opacity: 1; }
-      50% { transform: translateY(15px); opacity: 0.3; }
+
+      0%,
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      50% {
+        transform: translateY(15px);
+        opacity: 0.3;
+      }
     }
 
     @keyframes bounce {
-      0%, 100% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(-10px); }
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(-10px);
+      }
     }
 
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* ==================== PARTICLE CANVAS ==================== */
@@ -1014,8 +1265,15 @@
     }
 
     @keyframes cursorBlink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
     }
 
     /* ==================== 3D TILT CARDS ==================== */
@@ -1036,7 +1294,7 @@
     .hero-role:hover {
       border-color: var(--primary);
       transform: translateY(-5px) rotateX(5deg) rotateY(-5deg);
-      box-shadow: 
+      box-shadow:
         0 20px 40px rgba(99, 102, 241, 0.3),
         0 0 0 1px rgba(99, 102, 241, 0.2),
         inset 0 0 20px rgba(99, 102, 241, 0.1);
@@ -1060,20 +1318,72 @@
       animation: floatIcon 10s ease-in-out infinite;
     }
 
-    .floating-icon:nth-child(1) { top: 15%; left: 10%; animation-delay: 0s; }
-    .floating-icon:nth-child(2) { top: 25%; right: 15%; animation-delay: -2s; }
-    .floating-icon:nth-child(3) { bottom: 30%; left: 8%; animation-delay: -4s; }
-    .floating-icon:nth-child(4) { bottom: 20%; right: 10%; animation-delay: -6s; }
-    .floating-icon:nth-child(5) { top: 40%; left: 20%; animation-delay: -8s; }
-    .floating-icon:nth-child(6) { top: 60%; right: 20%; animation-delay: -3s; }
-    .floating-icon:nth-child(7) { bottom: 40%; left: 25%; animation-delay: -5s; }
-    .floating-icon:nth-child(8) { top: 70%; right: 25%; animation-delay: -7s; }
+    .floating-icon:nth-child(1) {
+      top: 15%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .floating-icon:nth-child(2) {
+      top: 25%;
+      right: 15%;
+      animation-delay: -2s;
+    }
+
+    .floating-icon:nth-child(3) {
+      bottom: 30%;
+      left: 8%;
+      animation-delay: -4s;
+    }
+
+    .floating-icon:nth-child(4) {
+      bottom: 20%;
+      right: 10%;
+      animation-delay: -6s;
+    }
+
+    .floating-icon:nth-child(5) {
+      top: 40%;
+      left: 20%;
+      animation-delay: -8s;
+    }
+
+    .floating-icon:nth-child(6) {
+      top: 60%;
+      right: 20%;
+      animation-delay: -3s;
+    }
+
+    .floating-icon:nth-child(7) {
+      bottom: 40%;
+      left: 25%;
+      animation-delay: -5s;
+    }
+
+    .floating-icon:nth-child(8) {
+      top: 70%;
+      right: 25%;
+      animation-delay: -7s;
+    }
 
     @keyframes floatIcon {
-      0%, 100% { transform: translate(0, 0) rotate(0deg); }
-      25% { transform: translate(20px, -20px) rotate(10deg); }
-      50% { transform: translate(-10px, 20px) rotate(-5deg); }
-      75% { transform: translate(15px, 10px) rotate(5deg); }
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      25% {
+        transform: translate(20px, -20px) rotate(10deg);
+      }
+
+      50% {
+        transform: translate(-10px, 20px) rotate(-5deg);
+      }
+
+      75% {
+        transform: translate(15px, 10px) rotate(5deg);
+      }
     }
 
     /* ==================== GLOWING ORB ==================== */
@@ -1089,8 +1399,17 @@
     }
 
     @keyframes orbPulse {
-      0%, 100% { transform: scale(1); opacity: 0.6; }
-      50% { transform: scale(1.3); opacity: 0.3; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+
+      50% {
+        transform: scale(1.3);
+        opacity: 0.3;
+      }
     }
 
     /* ==================== HERO STATS BAR ==================== */
@@ -1190,7 +1509,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-image: 
+      background-image:
         linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
       background-size: 60px 60px;
@@ -1242,8 +1561,13 @@
     }
 
     @keyframes marquee {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
     }
 
     /* ==================== ABOUT SECTION ==================== */
@@ -1334,10 +1658,21 @@
     }
 
     /* Clean 8-card grid layout */
-    .bento-name { grid-column: 1 / 3; }
-    .bento-code { grid-row: span 2; }
-    .bento-bio { grid-column: span 2; }
-    .bento-info { grid-row: span 2; }
+    .bento-name {
+      grid-column: 1 / 3;
+    }
+
+    .bento-code {
+      grid-row: span 2;
+    }
+
+    .bento-bio {
+      grid-column: span 2;
+    }
+
+    .bento-info {
+      grid-row: span 2;
+    }
 
     .bento-card {
       background: var(--card-bg);
@@ -1370,7 +1705,7 @@
       opacity: 0.05;
     }
 
-    .bento-card > * {
+    .bento-card>* {
       position: relative;
       z-index: 1;
     }
@@ -1449,7 +1784,7 @@
       line-height: 1.8;
     }
 
-    .bento-bio p + p {
+    .bento-bio p+p {
       margin-top: 15px;
     }
 
@@ -1507,22 +1842,55 @@
       animation: codeFade 0.5s ease forwards;
     }
 
-    .code-line:nth-child(1) { animation-delay: 0.1s; }
-    .code-line:nth-child(2) { animation-delay: 0.2s; }
-    .code-line:nth-child(3) { animation-delay: 0.3s; }
-    .code-line:nth-child(4) { animation-delay: 0.4s; }
-    .code-line:nth-child(5) { animation-delay: 0.5s; }
-    .code-line:nth-child(6) { animation-delay: 0.6s; }
-
-    @keyframes codeFade {
-      to { opacity: 1; }
+    .code-line:nth-child(1) {
+      animation-delay: 0.1s;
     }
 
-    .code-keyword { color: #c678dd; }
-    .code-variable { color: #e06c75; }
-    .code-string { color: #98c379; }
-    .code-function { color: #61afef; }
-    .code-bracket { color: #e5c07b; }
+    .code-line:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .code-line:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    .code-line:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+
+    .code-line:nth-child(5) {
+      animation-delay: 0.5s;
+    }
+
+    .code-line:nth-child(6) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes codeFade {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .code-keyword {
+      color: #c678dd;
+    }
+
+    .code-variable {
+      color: #e06c75;
+    }
+
+    .code-string {
+      color: #98c379;
+    }
+
+    .code-function {
+      color: #61afef;
+    }
+
+    .code-bracket {
+      color: #e5c07b;
+    }
 
     /* CTA Card */
     .bento-cta {
@@ -1599,8 +1967,17 @@
     }
 
     @keyframes availabilityPulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.2); opacity: 0.7; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+      }
     }
 
     .bento-availability span {
@@ -1675,8 +2052,13 @@
     }
 
     @keyframes orbitSpin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     /* Glowing border effect */
@@ -2441,7 +2823,7 @@
     .hackathon-mega-button:hover {
       transform: translateY(-5px) scale(1.01);
       border-color: var(--primary);
-      box-shadow: 
+      box-shadow:
         0 30px 60px rgba(99, 102, 241, 0.3),
         0 0 100px rgba(99, 102, 241, 0.1);
     }
@@ -2462,14 +2844,42 @@
       animation: hackathonFloat 4s ease-in-out infinite;
     }
 
-    .hackathon-particle.p1 { top: 20%; left: 10%; animation-delay: 0s; }
-    .hackathon-particle.p2 { top: 70%; left: 30%; animation-delay: 1s; }
-    .hackathon-particle.p3 { top: 30%; right: 20%; animation-delay: 2s; }
-    .hackathon-particle.p4 { bottom: 20%; right: 10%; animation-delay: 3s; }
+    .hackathon-particle.p1 {
+      top: 20%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .hackathon-particle.p2 {
+      top: 70%;
+      left: 30%;
+      animation-delay: 1s;
+    }
+
+    .hackathon-particle.p3 {
+      top: 30%;
+      right: 20%;
+      animation-delay: 2s;
+    }
+
+    .hackathon-particle.p4 {
+      bottom: 20%;
+      right: 10%;
+      animation-delay: 3s;
+    }
 
     @keyframes hackathonFloat {
-      0%, 100% { opacity: 0; transform: translateY(0) scale(0); }
-      50% { opacity: 0.8; transform: translateY(-30px) scale(1); }
+
+      0%,
+      100% {
+        opacity: 0;
+        transform: translateY(0) scale(0);
+      }
+
+      50% {
+        opacity: 0.8;
+        transform: translateY(-30px) scale(1);
+      }
     }
 
     .hackathon-glow {
@@ -2513,9 +2923,19 @@
     }
 
     @keyframes trophyBounce {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      25% { transform: translateY(-5px) rotate(-5deg); }
-      75% { transform: translateY(-5px) rotate(5deg); }
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      25% {
+        transform: translateY(-5px) rotate(-5deg);
+      }
+
+      75% {
+        transform: translateY(-5px) rotate(5deg);
+      }
     }
 
     .hackathon-text {
@@ -2610,12 +3030,10 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.05),
-        transparent
-      );
+      background: linear-gradient(90deg,
+          transparent,
+          rgba(255, 255, 255, 0.05),
+          transparent);
       transition: left 0.8s ease;
     }
 
@@ -2643,7 +3061,7 @@
       .hackathon-content {
         flex-wrap: wrap;
       }
-      
+
       .hackathon-stats {
         width: 100%;
         padding-left: 0;
@@ -2653,7 +3071,7 @@
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         justify-content: center;
       }
-      
+
       .hackathon-cta-arrow {
         display: none;
       }
@@ -2663,26 +3081,26 @@
       .hackathon-section {
         padding: 60px 20px 40px;
       }
-      
+
       .hackathon-mega-button {
         padding: 30px 25px;
         border-radius: 20px;
       }
-      
+
       .hackathon-icon-left {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
       }
-      
+
       .hackathon-stats {
         gap: 25px;
       }
-      
+
       .approach-step {
         padding: 30px 20px;
       }
-      
+
       .step-number {
         font-size: 3rem;
       }
@@ -2693,23 +3111,23 @@
       .navbar {
         padding: 20px 30px;
       }
-      
+
       .hero {
         padding: 100px 30px;
       }
-      
+
       .about-bento {
         grid-template-columns: repeat(2, 1fr);
       }
-      
+
       .bento-card.tall {
         grid-row: span 1;
       }
-      
+
       .timeline::before {
         left: 20px;
       }
-      
+
       .timeline-item,
       .timeline-item:nth-child(even) {
         width: 100%;
@@ -2717,13 +3135,13 @@
         padding-right: 0;
         margin-left: 0;
       }
-      
+
       .timeline-dot,
       .timeline-item:nth-child(even) .timeline-dot {
         left: 10px;
         right: auto;
       }
-      
+
       .contact-grid {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -2731,14 +3149,16 @@
     }
 
     @media (max-width: 768px) {
-      .cursor, .cursor-dot {
+
+      .cursor,
+      .cursor-dot {
         display: none;
       }
-      
+
       .navbar {
         padding: 15px 20px;
       }
-      
+
       .nav-links {
         position: fixed;
         top: 0;
@@ -2751,76 +3171,82 @@
         align-items: center;
         transition: right 0.4s ease;
       }
-      
+
       .nav-links.active {
         right: 0;
       }
-      
+
       .nav-cta {
         display: none;
       }
-      
+
       .menu-toggle {
         display: flex;
       }
-      
+
       .hero {
         padding: 80px 20px;
       }
-      
+
       .hero-roles {
         flex-direction: column;
         align-items: center;
       }
-      
+
       .hero-buttons {
         flex-direction: column;
         width: 100%;
         padding: 0 20px;
       }
-      
-      .btn-primary, .btn-secondary {
+
+      .btn-primary,
+      .btn-secondary {
         width: 100%;
         justify-content: center;
       }
-      
+
       .hero-social {
         display: none;
       }
-      
+
       .hero-stats {
         flex-direction: column;
         gap: 20px;
       }
-      
-      .about, .services, .experience, .projects, .tech-stack, .contact {
+
+      .about,
+      .services,
+      .experience,
+      .projects,
+      .tech-stack,
+      .contact {
         padding: 80px 20px;
       }
-      
+
       .about-bento {
         grid-template-columns: 1fr;
       }
-      
+
       .bento-card.large,
       .bento-card.tall {
         grid-column: span 1;
         grid-row: span 1;
       }
-      
+
       .services-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .projects-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .footer-content {
         flex-direction: column;
         gap: 20px;
         text-align: center;
       }
-      
+
       .footer-links {
         flex-wrap: wrap;
         justify-content: center;
@@ -2920,8 +3346,13 @@
 
     /* ==================== RAINBOW EASTER EGG ==================== */
     @keyframes rainbow {
-      0% { filter: hue-rotate(0deg); }
-      100% { filter: hue-rotate(360deg); }
+      0% {
+        filter: hue-rotate(0deg);
+      }
+
+      100% {
+        filter: hue-rotate(360deg);
+      }
     }
 
     /* ==================== LOADED STATE ANIMATIONS ==================== */
@@ -2938,13 +3369,27 @@
     }
 
     @keyframes slideDown {
-      from { transform: translateY(-100%); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     @keyframes fadeInUp {
-      from { transform: translateY(50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     /* ==================== IMAGE LOADED STATE ==================== */
@@ -3001,26 +3446,51 @@
     }
 
     @keyframes borderGlow {
-      0%, 100% { filter: blur(4px); }
-      50% { filter: blur(8px); }
+
+      0%,
+      100% {
+        filter: blur(4px);
+      }
+
+      50% {
+        filter: blur(8px);
+      }
     }
 
     /* ==================== STAGGER ANIMATION DELAYS ==================== */
-    .stagger-1 { animation-delay: 0.1s; }
-    .stagger-2 { animation-delay: 0.2s; }
-    .stagger-3 { animation-delay: 0.3s; }
-    .stagger-4 { animation-delay: 0.4s; }
-    .stagger-5 { animation-delay: 0.5s; }
-    .stagger-6 { animation-delay: 0.6s; }
+    .stagger-1 {
+      animation-delay: 0.1s;
+    }
+
+    .stagger-2 {
+      animation-delay: 0.2s;
+    }
+
+    .stagger-3 {
+      animation-delay: 0.3s;
+    }
+
+    .stagger-4 {
+      animation-delay: 0.4s;
+    }
+
+    .stagger-5 {
+      animation-delay: 0.5s;
+    }
+
+    .stagger-6 {
+      animation-delay: 0.6s;
+    }
 
     /* ==================== RESPONSIVE CURSOR ==================== */
     @media (max-width: 768px) {
+
       .cursor,
       .cursor-dot,
       .cursor-trail {
         display: none !important;
       }
-      
+
       .back-to-top {
         bottom: 20px;
         right: 20px;
@@ -3031,6 +3501,7 @@
 
     /* ==================== PRINT STYLES ==================== */
     @media print {
+
       .preloader,
       .cursor,
       .cursor-dot,
@@ -3038,7 +3509,7 @@
       .scroll-progress {
         display: none !important;
       }
-      
+
       body {
         background: white;
         color: black;
@@ -3046,6 +3517,7 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Preloader -->
   <div class="preloader">
@@ -3103,16 +3575,16 @@
   <section class="hero" id="home">
     <canvas id="particles-canvas"></canvas>
     <div class="hero-grid"></div>
-    
+
     <div class="hero-bg">
       <div class="hero-gradient gradient-1"></div>
       <div class="hero-gradient gradient-2"></div>
       <div class="hero-gradient gradient-3"></div>
     </div>
-    
+
     <div class="hero-orb" style="top: 20%; left: 10%;"></div>
     <div class="hero-orb" style="bottom: 20%; right: 10%;"></div>
-    
+
     <div class="hero-floating-icons">
       <i class="bi bi-braces floating-icon"></i>
       <i class="bi bi-code-slash floating-icon"></i>
@@ -3123,31 +3595,31 @@
       <i class="bi bi-terminal floating-icon"></i>
       <i class="bi bi-git floating-icon"></i>
     </div>
-    
+
     <div class="hero-social">
       <a href="https://github.com/princegarg001" target="_blank"><i class="bi bi-github"></i></a>
       <a href="https://www.linkedin.com/in/prince-garg-803aa8288/" target="_blank"><i class="bi bi-linkedin"></i></a>
       <a href="https://instagram.com/princegarg" target="_blank"><i class="bi bi-instagram"></i></a>
       <a href="mailto:pg3355716@gmail.com"><i class="bi bi-envelope"></i></a>
     </div>
-    
+
     <div class="hero-content">
       <div class="hero-badge">
         <span class="hero-badge-dot"></span>
         <span>Available for opportunities</span>
       </div>
-      
+
       <p class="hero-subtitle">Hello! I'm</p>
-      
+
       <h1 class="hero-title">
         <span class="hero-title-gradient">PRINCE GARG</span>
       </h1>
-      
+
       <div class="typing-wrapper">
         <span class="typing-text" id="typingText"></span>
         <span class="typing-cursor"></span>
       </div>
-      
+
       <div class="hero-roles">
         <div class="hero-role">
           <i class="bi bi-code-slash"></i>
@@ -3162,7 +3634,7 @@
           Cloud Computing
         </div>
       </div>
-      
+
       <div class="hero-buttons">
         <a href="#projects" class="btn-primary btn-magnetic">
           <i class="bi bi-folder"></i>
@@ -3173,7 +3645,7 @@
           Get In Touch
         </a>
       </div>
-      
+
       <div class="hero-stats">
         <div class="hero-stat-item">
           <div class="hero-stat-number" data-target="10">0</div>
@@ -3189,7 +3661,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="hero-scroll">
       <div class="hero-scroll-icon">
         <div class="hero-scroll-dot"></div>
@@ -3219,7 +3691,7 @@
       <span class="section-label">About Me</span>
       <h2 class="section-title">Discover <span>My Story</span></h2>
     </div>
-    
+
     <div class="about-container">
       <div class="about-bento">
         <!-- Name Card -->
@@ -3227,34 +3699,43 @@
           <h2>I'm <span>Prince Garg</span></h2>
           <p>A passionate developer turning ideas into reality through code</p>
         </div>
-        
+
         <!-- Stats -->
         <div class="bento-card bento-stat reveal">
           <div class="bento-stat-number">10+</div>
           <div class="bento-stat-label">Projects</div>
         </div>
-        
+
         <div class="bento-card bento-stat reveal">
           <div class="bento-stat-number">2+</div>
           <div class="bento-stat-label">Years</div>
         </div>
-        
+
         <!-- Code Animation -->
         <div class="bento-card bento-code tall reveal">
-          <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = <span class="code-bracket">{</span></div>
-          <div class="code-line">  <span class="code-variable">name</span>: <span class="code-string">"Prince"</span>,</div>
-          <div class="code-line">  <span class="code-variable">skills</span>: <span class="code-bracket">[</span><span class="code-string">"React"</span>, <span class="code-string">"Node"</span><span class="code-bracket">]</span>,</div>
-          <div class="code-line">  <span class="code-variable">passion</span>: <span class="code-string">"∞"</span>,</div>
-          <div class="code-line">  <span class="code-function">build</span>: <span class="code-bracket">()</span> => <span class="code-string">"amazing"</span></div>
+          <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> =
+            <span class="code-bracket">{</span></div>
+          <div class="code-line"> <span class="code-variable">name</span>: <span class="code-string">"Prince"</span>,
+          </div>
+          <div class="code-line"> <span class="code-variable">skills</span>: <span class="code-bracket">[</span><span
+              class="code-string">"React"</span>, <span class="code-string">"Node"</span><span
+              class="code-bracket">]</span>,</div>
+          <div class="code-line"> <span class="code-variable">passion</span>: <span class="code-string">"∞"</span>,
+          </div>
+          <div class="code-line"> <span class="code-function">build</span>: <span class="code-bracket">()</span> =>
+            <span class="code-string">"amazing"</span></div>
           <div class="code-line"><span class="code-bracket">}</span>;</div>
         </div>
-        
+
         <!-- Bio -->
         <div class="bento-card bento-bio large reveal">
-          <p>Passionate about data and technology, exploring the intersections of computer science and software development. Keen interest in solving real-world problems through system design and cloud-native solutions.</p>
-          <p>Skilled in deploying, managing, and optimizing microservices for real-time performance and cost efficiency. Building intelligent systems with GenAI, RAG, and LangChain.</p>
+          <p>Passionate about data and technology, exploring the intersections of computer science and software
+            development. Keen interest in solving real-world problems through system design and cloud-native solutions.
+          </p>
+          <p>Skilled in deploying, managing, and optimizing microservices for real-time performance and cost efficiency.
+            Building intelligent systems with GenAI, RAG, and LangChain.</p>
         </div>
-        
+
         <!-- Info -->
         <div class="bento-card bento-info reveal">
           <div class="bento-info-item">
@@ -3279,7 +3760,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Location -->
         <div class="bento-card bento-location reveal">
           <div class="location-flag">🇮🇳</div>
@@ -3287,7 +3768,7 @@
           <p>Open to Remote</p>
           <div class="location-globe">🌍</div>
         </div>
-        
+
         <!-- Tech Focus -->
         <div class="bento-card bento-stat reveal">
           <div class="bento-stat-number">15+</div>
@@ -3303,14 +3784,15 @@
       <span class="section-label">What I Do</span>
       <h2 class="section-title">My <span>Services</span></h2>
     </div>
-    
+
     <div class="services-grid">
       <div class="service-card reveal">
         <div class="service-icon">
           <i class="bi bi-code-slash"></i>
         </div>
         <h3>Full Stack Development</h3>
-        <p>Building responsive, high-performance web applications using modern frameworks with TypeScript and robust backend systems.</p>
+        <p>Building responsive, high-performance web applications using modern frameworks with TypeScript and robust
+          backend systems.</p>
         <div class="service-skills">
           <span class="skill-tag">React</span>
           <span class="skill-tag">Next.js</span>
@@ -3318,13 +3800,14 @@
           <span class="skill-tag">TailwindCSS</span>
         </div>
       </div>
-      
+
       <div class="service-card reveal">
         <div class="service-icon">
           <i class="bi bi-server"></i>
         </div>
         <h3>Backend Engineering</h3>
-        <p>Designing scalable microservices with JWT authentication, role-based access control, and RESTful API architecture.</p>
+        <p>Designing scalable microservices with JWT authentication, role-based access control, and RESTful API
+          architecture.</p>
         <div class="service-skills">
           <span class="skill-tag">Spring Boot</span>
           <span class="skill-tag">Node.js</span>
@@ -3332,13 +3815,14 @@
           <span class="skill-tag">Golang</span>
         </div>
       </div>
-      
+
       <div class="service-card reveal">
         <div class="service-icon">
           <i class="bi bi-cloud"></i>
         </div>
         <h3>Cloud & DevOps</h3>
-        <p>Deploying and managing cloud infrastructure with containerization, Kubernetes orchestration, and IaC principles.</p>
+        <p>Deploying and managing cloud infrastructure with containerization, Kubernetes orchestration, and IaC
+          principles.</p>
         <div class="service-skills">
           <span class="skill-tag">GCP/GKE</span>
           <span class="skill-tag">AWS</span>
@@ -3346,13 +3830,14 @@
           <span class="skill-tag">Terraform</span>
         </div>
       </div>
-      
+
       <div class="service-card reveal">
         <div class="service-icon">
           <i class="bi bi-robot"></i>
         </div>
         <h3>GenAI & RAG Systems</h3>
-        <p>Building intelligent document assistants with RAG pipelines, vector databases, and LLM integration for semantic search.</p>
+        <p>Building intelligent document assistants with RAG pipelines, vector databases, and LLM integration for
+          semantic search.</p>
         <div class="service-skills">
           <span class="skill-tag">LangChain</span>
           <span class="skill-tag">FAISS</span>
@@ -3360,13 +3845,14 @@
           <span class="skill-tag">MCP</span>
         </div>
       </div>
-      
+
       <div class="service-card reveal">
         <div class="service-icon">
           <i class="bi bi-phone"></i>
         </div>
         <h3>Mobile Development</h3>
-        <p>Creating cross-platform mobile applications with beautiful interfaces and native performance using modern frameworks.</p>
+        <p>Creating cross-platform mobile applications with beautiful interfaces and native performance using modern
+          frameworks.</p>
         <div class="service-skills">
           <span class="skill-tag">Flutter</span>
           <span class="skill-tag">Kotlin</span>
@@ -3374,13 +3860,14 @@
           <span class="skill-tag">Dart</span>
         </div>
       </div>
-      
+
       <div class="service-card reveal">
         <div class="service-icon">
           <i class="bi bi-database"></i>
         </div>
         <h3>Data & Analytics</h3>
-        <p>Building cost optimization dashboards, data visualization systems, and BigQuery analytics for business insights.</p>
+        <p>Building cost optimization dashboards, data visualization systems, and BigQuery analytics for business
+          insights.</p>
         <div class="service-skills">
           <span class="skill-tag">BigQuery</span>
           <span class="skill-tag">MongoDB</span>
@@ -3397,7 +3884,7 @@
       <span class="section-label">My Journey</span>
       <h2 class="section-title">Career & <span>Experience</span></h2>
     </div>
-    
+
     <div class="timeline">
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
@@ -3405,30 +3892,33 @@
           <span class="timeline-year">Jul - Aug 2025</span>
           <h3>AI-Driven Fire Safety System</h3>
           <h4>Edunet Foundation</h4>
-          <p>Developed Streamlit dashboard for real-time fire safety monitoring using IoT sensor data. Implemented 3D visualization and anomaly detection pipeline.</p>
+          <p>Developed Streamlit dashboard for real-time fire safety monitoring using IoT sensor data. Implemented 3D
+            visualization and anomaly detection pipeline.</p>
         </div>
       </div>
-      
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <span class="timeline-year">Jun - Jul 2025</span>
           <h3>Cloud Cost Optimisation Dashboard</h3>
           <h4>Codec Technology</h4>
-          <p>Developed Power BI dashboard for GCP cost visualization. Implemented service-wise breakdowns, project-level analysis, and usage trend tracking.</p>
+          <p>Developed Power BI dashboard for GCP cost visualization. Implemented service-wise breakdowns, project-level
+            analysis, and usage trend tracking.</p>
         </div>
       </div>
-      
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <span class="timeline-year">2023 - 2027</span>
           <h3>B.Tech Computer Science</h3>
           <h4>The NorthCap University</h4>
-          <p>Pursuing B.Tech in Computer Science with 8.89 CGPA. Focusing on System Design, Cloud Computing, and Full Stack Development.</p>
+          <p>Pursuing B.Tech in Computer Science with 8.89 CGPA. Focusing on System Design, Cloud Computing, and Full
+            Stack Development.</p>
         </div>
       </div>
-      
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -3447,7 +3937,7 @@
       <span class="section-label">Portfolio</span>
       <h2 class="section-title">My <span>Projects</span></h2>
     </div>
-    
+
     <div class="projects-grid">
       <div class="project-card reveal">
         <div class="project-image">
@@ -3458,7 +3948,8 @@
         </div>
         <div class="project-content">
           <h3>Fitness-X Tracker</h3>
-          <p>Complete fitness tracking app with workout logging, gym discovery, face recognition enrollment, analytics dashboard, and leaderboard system.</p>
+          <p>Complete fitness tracking app with workout logging, gym discovery, face recognition enrollment, analytics
+            dashboard, and leaderboard system.</p>
           <div class="project-tech">
             <span class="tech-tag">Next.js 16</span>
             <span class="tech-tag">Node.js</span>
@@ -3476,7 +3967,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="project-card reveal">
         <div class="project-image">
           <div class="project-icon-placeholder"><i class="bi bi-arrow-left-right"></i></div>
@@ -3486,7 +3977,8 @@
         </div>
         <div class="project-content">
           <h3>Slot Swapper</h3>
-          <p>Full-stack peer-to-peer slot swapping platform with atomic swap transaction logic for consistent event ownership updates.</p>
+          <p>Full-stack peer-to-peer slot swapping platform with atomic swap transaction logic for consistent event
+            ownership updates.</p>
           <div class="project-tech">
             <span class="tech-tag">Next.js</span>
             <span class="tech-tag">React</span>
@@ -3504,7 +3996,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="project-card reveal">
         <div class="project-image">
           <div class="project-icon-placeholder"><i class="bi bi-file-earmark-text"></i></div>
@@ -3514,7 +4006,8 @@
         </div>
         <div class="project-content">
           <h3>DocuMind - RAG Assistant</h3>
-          <p>RAG-powered Intelligent Document Assistant for PDF, text, images with OCR, FAISS vector indexing, and chat-based Q&A.</p>
+          <p>RAG-powered Intelligent Document Assistant for PDF, text, images with OCR, FAISS vector indexing, and
+            chat-based Q&A.</p>
           <div class="project-tech">
             <span class="tech-tag">Flask</span>
             <span class="tech-tag">FAISS</span>
@@ -3529,7 +4022,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="project-card reveal">
         <div class="project-image">
           <div class="project-icon-placeholder"><i class="bi bi-tree"></i></div>
@@ -3539,7 +4032,8 @@
         </div>
         <div class="project-content">
           <h3>Smart Farming IoT System</h3>
-          <p>Spring Boot-based IoT Monitoring with JWT auth, role-based access (ADMIN/FARMER), analytics for temperature, moisture, pH levels.</p>
+          <p>Spring Boot-based IoT Monitoring with JWT auth, role-based access (ADMIN/FARMER), analytics for
+            temperature, moisture, pH levels.</p>
           <div class="project-tech">
             <span class="tech-tag">Spring Boot</span>
             <span class="tech-tag">JWT</span>
@@ -3554,7 +4048,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="project-card reveal">
         <div class="project-image">
           <div class="project-icon-placeholder"><i class="bi bi-fire"></i></div>
@@ -3564,7 +4058,8 @@
         </div>
         <div class="project-content">
           <h3>AI Fire Safety Monitoring</h3>
-          <p>Streamlit dashboard for real-time fire safety with 3D visualization of temperature, humidity, smoke intensity, and flame detection.</p>
+          <p>Streamlit dashboard for real-time fire safety with 3D visualization of temperature, humidity, smoke
+            intensity, and flame detection.</p>
           <div class="project-tech">
             <span class="tech-tag">Streamlit</span>
             <span class="tech-tag">Python</span>
@@ -3578,7 +4073,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="project-card reveal">
         <div class="project-image">
           <div class="project-icon-placeholder"><i class="bi bi-cloud"></i></div>
@@ -3588,7 +4083,8 @@
         </div>
         <div class="project-content">
           <h3>Cloud Cost Optimization</h3>
-          <p>Power BI dashboard for GCP cost visualization with service-wise breakdowns, project-level analysis, and usage trend tracking.</p>
+          <p>Power BI dashboard for GCP cost visualization with service-wise breakdowns, project-level analysis, and
+            usage trend tracking.</p>
           <div class="project-tech">
             <span class="tech-tag">Power BI</span>
             <span class="tech-tag">GCP</span>
@@ -3596,7 +4092,8 @@
             <span class="tech-tag">BigQuery</span>
           </div>
           <div class="project-links">
-            <a href="https://app.powerbi.com/groups/me/reports/022d58f2-f754-4dac-8b63-aa2c16587ab8/316632bbb7bba6918039?experience=power-bi" class="project-link" target="_blank">
+            <a href="https://app.powerbi.com/groups/me/reports/022d58f2-f754-4dac-8b63-aa2c16587ab8/316632bbb7bba6918039?experience=power-bi"
+              class="project-link" target="_blank">
               <i class="bi bi-box-arrow-up-right"></i> Live Demo
             </a>
           </div>
@@ -3611,7 +4108,7 @@
       <span class="section-label">Technologies</span>
       <h2 class="section-title">My <span>Tech Stack</span></h2>
     </div>
-    
+
     <div class="tech-grid reveal">
       <div class="tech-item"><i class="bi bi-braces"></i> <span>React</span></div>
       <div class="tech-item"><i class="bi bi-filetype-tsx"></i> <span>TypeScript</span></div>
@@ -3646,12 +4143,13 @@
       <span class="section-label">Get In Touch</span>
       <h2 class="section-title">Let's <span>Connect</span></h2>
     </div>
-    
+
     <div class="contact-grid">
       <div class="contact-info reveal-left">
         <h3>Let's Create Something Amazing Together</h3>
-        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
-        
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel
+          free to reach out!</p>
+
         <div class="contact-details">
           <div class="contact-item">
             <div class="contact-item-icon">
@@ -3662,7 +4160,7 @@
               <a href="mailto:pg3355716@gmail.com">pg3355716@gmail.com</a>
             </div>
           </div>
-          
+
           <div class="contact-item">
             <div class="contact-item-icon">
               <i class="bi bi-telephone"></i>
@@ -3672,7 +4170,7 @@
               <a href="tel:+918295095069">+91 8295095069</a>
             </div>
           </div>
-          
+
           <div class="contact-item">
             <div class="contact-item-icon">
               <i class="bi bi-geo-alt"></i>
@@ -3683,7 +4181,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="social-links">
           <a href="https://www.linkedin.com/in/prince-garg-803aa8288/" class="social-link" target="_blank">
             <i class="bi bi-linkedin"></i>
@@ -3699,24 +4197,24 @@
           </a>
         </div>
       </div>
-      
+
       <div class="contact-form reveal-right">
         <form action="https://formspree.io/f/xkgbqgje" method="POST">
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="John Doe" required>
           </div>
-          
+
           <div class="form-group">
             <label for="email">Your Email</label>
             <input type="email" id="email" name="email" placeholder="john@example.com" required>
           </div>
-          
+
           <div class="form-group">
             <label for="message">Your Message</label>
             <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
           </div>
-          
+
           <button type="submit" class="form-submit">
             <i class="bi bi-send"></i>
             Send Message
@@ -3734,35 +4232,38 @@
         <span class="approach-label">MY METHODOLOGY</span>
         <h2 class="approach-title">How I Approach Problems</h2>
       </div>
-      
+
       <div class="approach-steps">
         <div class="approach-step">
           <div class="step-number">01</div>
           <div class="step-content">
             <h3>Understand & Analyze</h3>
-            <p>Deep dive into the problem. Break it down into smaller, manageable pieces. Research existing solutions and identify gaps.</p>
+            <p>Deep dive into the problem. Break it down into smaller, manageable pieces. Research existing solutions
+              and identify gaps.</p>
           </div>
           <div class="step-icon"><i class="bi bi-search"></i></div>
         </div>
-        
+
         <div class="approach-step">
           <div class="step-number">02</div>
           <div class="step-content">
             <h3>Design & Architect</h3>
-            <p>Create system designs, wireframes, and choose the right tech stack. Plan for scalability and edge cases from day one.</p>
+            <p>Create system designs, wireframes, and choose the right tech stack. Plan for scalability and edge cases
+              from day one.</p>
           </div>
           <div class="step-icon"><i class="bi bi-diagram-3"></i></div>
         </div>
-        
+
         <div class="approach-step">
           <div class="step-number">03</div>
           <div class="step-content">
             <h3>Build & Iterate</h3>
-            <p>Rapid prototyping with clean code. Test early, fail fast, and iterate based on feedback. Ship MVPs quickly.</p>
+            <p>Rapid prototyping with clean code. Test early, fail fast, and iterate based on feedback. Ship MVPs
+              quickly.</p>
           </div>
           <div class="step-icon"><i class="bi bi-code-slash"></i></div>
         </div>
-        
+
         <div class="approach-step">
           <div class="step-number">04</div>
           <div class="step-content">
@@ -3784,18 +4285,19 @@
           <div class="hackathon-particle p4"></div>
           <div class="hackathon-glow"></div>
         </div>
-        
+
         <div class="hackathon-content">
           <div class="hackathon-icon-left">
             <i class="bi bi-trophy"></i>
           </div>
-          
+
           <div class="hackathon-text">
             <span class="hackathon-label">ACTIVELY PARTICIPATING IN</span>
             <h3 class="hackathon-title">Hackathons & Coding Challenges</h3>
-            <p class="hackathon-desc">Always ready to collaborate, innovate, and build impactful solutions under pressure. Let's team up!</p>
+            <p class="hackathon-desc">Always ready to collaborate, innovate, and build impactful solutions under
+              pressure. Let's team up!</p>
           </div>
-          
+
           <div class="hackathon-stats">
             <div class="hackathon-stat">
               <span class="stat-value">10+</span>
@@ -3810,13 +4312,13 @@
               <span class="stat-label">Ideas</span>
             </div>
           </div>
-          
+
           <div class="hackathon-cta-arrow">
             <i class="bi bi-arrow-right"></i>
             <span class="arrow-text">View All</span>
           </div>
         </div>
-        
+
         <div class="hackathon-shimmer"></div>
       </a>
     </div>
@@ -3839,66 +4341,66 @@
         initAllAnimations();
       });
     } else {
-    // ==================== WORLD-CLASS PRELOADER ====================
-    window.addEventListener('load', () => {
-      const percentEl = document.querySelector('.preloader-percent');
-      const progressBar = document.querySelector('.preloader-progress');
-      const loadingText = document.querySelector('.preloader-text');
-      let percent = 0;
-      const totalDuration = 5000;
-      const intervalTime = 40;
-      const increments = totalDuration / intervalTime;
-      const loadingMessages = [
-        'Initializing Experience',
-        'Loading Particles',
-        'Preparing Animations',
-        'Setting Up Canvas',
-        'Loading Assets',
-        'Almost There',
-        'Launching Portfolio'
-      ];
-      
-      let messageIndex = 0;
-      const messageInterval = setInterval(() => {
-        messageIndex = (messageIndex + 1) % loadingMessages.length;
-        if (loadingText) {
-          loadingText.style.opacity = '0';
-          setTimeout(() => {
-            loadingText.textContent = loadingMessages[messageIndex];
-            loadingText.style.opacity = '1';
-          }, 200);
-        }
-      }, 700);
-      
-      const counterInterval = setInterval(() => {
-        const baseIncrement = 100 / increments;
-        const randomFactor = 0.5 + Math.random();
-        percent += baseIncrement * randomFactor;
-        
-        if (percent >= 100) {
-          percent = 100;
-          percentEl.textContent = Math.round(percent) + '%';
-          progressBar.style.width = percent + '%';
-          clearInterval(counterInterval);
-          clearInterval(messageInterval);
-          if (loadingText) loadingText.textContent = '✨ Welcome!';
-          
-          setTimeout(() => {
-            document.querySelector('.preloader').classList.add('hidden');
-            document.body.classList.add('loaded');
-            window.location.hash = '';
+      // ==================== WORLD-CLASS PRELOADER ====================
+      window.addEventListener('load', () => {
+        const percentEl = document.querySelector('.preloader-percent');
+        const progressBar = document.querySelector('.preloader-progress');
+        const loadingText = document.querySelector('.preloader-text');
+        let percent = 0;
+        const totalDuration = 5000;
+        const intervalTime = 40;
+        const increments = totalDuration / intervalTime;
+        const loadingMessages = [
+          'Initializing Experience',
+          'Loading Particles',
+          'Preparing Animations',
+          'Setting Up Canvas',
+          'Loading Assets',
+          'Almost There',
+          'Launching Portfolio'
+        ];
+
+        let messageIndex = 0;
+        const messageInterval = setInterval(() => {
+          messageIndex = (messageIndex + 1) % loadingMessages.length;
+          if (loadingText) {
+            loadingText.style.opacity = '0';
             setTimeout(() => {
-              window.location.hash = '#home';
-              window.scrollTo({ top: 0, behavior: 'instant' });
-              initAllAnimations();
-            }, 100);
-          }, 800);
-        } else {
-          percentEl.textContent = Math.round(percent) + '%';
-          progressBar.style.width = percent + '%';
-        }
-      }, intervalTime);
-    });
+              loadingText.textContent = loadingMessages[messageIndex];
+              loadingText.style.opacity = '1';
+            }, 200);
+          }
+        }, 700);
+
+        const counterInterval = setInterval(() => {
+          const baseIncrement = 100 / increments;
+          const randomFactor = 0.5 + Math.random();
+          percent += baseIncrement * randomFactor;
+
+          if (percent >= 100) {
+            percent = 100;
+            percentEl.textContent = Math.round(percent) + '%';
+            progressBar.style.width = percent + '%';
+            clearInterval(counterInterval);
+            clearInterval(messageInterval);
+            if (loadingText) loadingText.textContent = '✨ Welcome!';
+
+            setTimeout(() => {
+              document.querySelector('.preloader').classList.add('hidden');
+              document.body.classList.add('loaded');
+              window.location.hash = '';
+              setTimeout(() => {
+                window.location.hash = '#home';
+                window.scrollTo({ top: 0, behavior: 'instant' });
+                initAllAnimations();
+              }, 100);
+            }, 800);
+          } else {
+            percentEl.textContent = Math.round(percent) + '%';
+            progressBar.style.width = percent + '%';
+          }
+        }, intervalTime);
+      });
     } // End of else block for skiploader
 
     // ==================== ADVANCED CUSTOM CURSOR ====================
@@ -3911,12 +4413,12 @@
     function animateCursor() {
       cursorX += (dotX - cursorX) * 0.15;
       cursorY += (dotY - cursorY) * 0.15;
-      
+
       if (cursor) {
         cursor.style.left = cursorX + 'px';
         cursor.style.top = cursorY + 'px';
       }
-      
+
       requestAnimationFrame(animateCursor);
     }
     animateCursor();
@@ -3924,7 +4426,7 @@
     document.addEventListener('mousemove', (e) => {
       dotX = e.clientX;
       dotY = e.clientY;
-      
+
       if (cursorDot) {
         cursorDot.style.left = e.clientX + 'px';
         cursorDot.style.top = e.clientY + 'px';
@@ -3961,7 +4463,7 @@
         const rect = btn.getBoundingClientRect();
         const x = e.clientX - rect.left - rect.width / 2;
         const y = e.clientY - rect.top - rect.height / 2;
-        
+
         btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
         btn.style.transition = 'transform 0.1s ease';
       });
@@ -3978,13 +4480,13 @@
 
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY > 50) {
         navbar.classList.add('scrolled');
       } else {
         navbar.classList.remove('scrolled');
       }
-      
+
       // Hide/show navbar on scroll direction
       if (currentScrollY > lastScrollY && currentScrollY > 200) {
         navbar.style.transform = 'translateY(-100%)';
@@ -4027,7 +4529,7 @@
 
     // ==================== SMOOTH SCROLL ====================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -4082,7 +4584,7 @@
         const rect = card.getBoundingClientRect();
         const x = (e.clientX - rect.left) / rect.width - 0.5;
         const y = (e.clientY - rect.top) / rect.height - 0.5;
-        
+
         card.style.transform = `
           perspective(1000px) 
           rotateY(${x * 15}deg) 
@@ -4091,7 +4593,7 @@
           scale(1.02)
         `;
         card.style.transition = 'transform 0.1s ease';
-        
+
         // Inner glow effect
         const glowX = e.clientX - rect.left;
         const glowY = e.clientY - rect.top;
@@ -4128,9 +4630,9 @@
 
     function typeEffect() {
       if (!typingElement) return;
-      
+
       const currentPhrase = phrases[phraseIndex];
-      
+
       if (isDeleting) {
         typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
         charIndex--;
@@ -4188,12 +4690,12 @@
       update() {
         this.x += this.speedX;
         this.y += this.speedY;
-        
+
         // Mouse interaction
         const dx = mouseParticleX - this.x;
         const dy = mouseParticleY - this.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        
+
         if (distance < 150) {
           const force = (150 - distance) / 150;
           this.x -= (dx / distance) * force * 2;
@@ -4211,7 +4713,7 @@
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fillStyle = `hsla(${this.hue}, 80%, 60%, ${this.opacity})`;
         ctx.fill();
-        
+
         // Glow effect
         ctx.shadowBlur = 15;
         ctx.shadowColor = `hsla(${this.hue}, 80%, 60%, 0.5)`;
@@ -4257,12 +4759,12 @@
       if (!ctx || !canvas) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.shadowBlur = 0;
-      
+
       particles.forEach(particle => {
         particle.update();
         particle.draw();
       });
-      
+
       connectParticles();
       requestAnimationFrame(animateParticles);
     }
@@ -4275,7 +4777,7 @@
     // ==================== COUNTER ANIMATION ====================
     function animateCounters() {
       const counters = document.querySelectorAll('.hero-stat-number[data-target]');
-      
+
       counters.forEach(counter => {
         const target = parseInt(counter.getAttribute('data-target'));
         const duration = 2500;
@@ -4284,13 +4786,13 @@
         const updateCounter = (currentTime) => {
           const elapsed = currentTime - startTime;
           const progress = Math.min(elapsed / duration, 1);
-          
+
           // Easing function for smooth animation
           const easeOutQuart = 1 - Math.pow(1 - progress, 4);
           const current = Math.floor(easeOutQuart * target);
-          
+
           counter.textContent = current + '+';
-          
+
           if (progress < 1) {
             requestAnimationFrame(updateCounter);
           } else {
@@ -4322,13 +4824,13 @@
         this.chars = '!<>-_\\/[]{}—=+*^?#________';
         this.update = this.update.bind(this);
       }
-      
+
       setText(newText) {
         const oldText = this.el.innerText;
         const length = Math.max(oldText.length, newText.length);
         const promise = new Promise((resolve) => this.resolve = resolve);
         this.queue = [];
-        
+
         for (let i = 0; i < length; i++) {
           const from = oldText[i] || '';
           const to = newText[i] || '';
@@ -4336,20 +4838,20 @@
           const end = start + Math.floor(Math.random() * 40);
           this.queue.push({ from, to, start, end });
         }
-        
+
         cancelAnimationFrame(this.frameRequest);
         this.frame = 0;
         this.update();
         return promise;
       }
-      
+
       update() {
         let output = '';
         let complete = 0;
-        
+
         for (let i = 0, n = this.queue.length; i < n; i++) {
           let { from, to, start, end, char } = this.queue[i];
-          
+
           if (this.frame >= end) {
             complete++;
             output += to;
@@ -4363,9 +4865,9 @@
             output += from;
           }
         }
-        
+
         this.el.innerHTML = output;
-        
+
         if (complete === this.queue.length) {
           this.resolve();
         } else {
@@ -4373,7 +4875,7 @@
           this.frame++;
         }
       }
-      
+
       randomChar() {
         return this.chars[Math.floor(Math.random() * this.chars.length)];
       }
@@ -4384,7 +4886,7 @@
       initParticles();
       animateParticles();
       setTimeout(typeEffect, 1000);
-      
+
       // Add loaded class to body for CSS animations
       document.body.classList.add('animations-ready');
     }
@@ -4451,7 +4953,7 @@
     document.addEventListener('keydown', (e) => {
       konamiCode.push(e.key);
       konamiCode = konamiCode.slice(-10);
-      
+
       if (konamiCode.join(',') === konamiPattern.join(',')) {
         document.body.style.animation = 'rainbow 2s linear infinite';
         setTimeout(() => {
@@ -4461,4 +4963,5 @@
     });
   </script>
 </body>
+
 </html>
