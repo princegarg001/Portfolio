@@ -502,7 +502,6 @@
               <li>Developed a dynamic Power BI dashboard for visualizing and optimizing Google Cloud Platform (GCP) costs.</li>
               <li>Implemented service-wise cost breakdowns, project-level expenditure analysis, and usage trend tracking.</li>
               <li>Delivered an interactive and user-friendly dashboard accessible via Power BI service.</li>
-              <li style="list-style-type: none; margin-top: 10px;"><a href="#" target="_blank" style="color: var(--accent); text-decoration: underline; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;"><i class="bi bi-box-arrow-up-right"></i> View Dashboard</a></li>
             </ul>
           </div>
         </div>
@@ -899,8 +898,8 @@
           "Containerized the pipeline using Docker, structuring logs, health checks, and CI pipeline steps for production-grade builds."
         ],
         tech: ["FastAPI", "YOLOv8", "SQLite", "Streamlit", "Docker", "Python"],
-        github: "https://github.com/princegarg001",
-        live: "https://github.com/princegarg001"
+        github: "https://github.com/princegarg001/retail-intelligence-engine",
+        live: ""
       },
       nevup: {
         title: "NevUp – AI System Pulse Logs",
@@ -914,8 +913,8 @@
           "Deployed cloud-native infrastructure with Docker and Kubernetes, configuring health monitors and executing load-performance testing."
         ],
         tech: ["Node.js", "TypeScript", "Fastify", "PostgreSQL", "Kafka", "Redis", "Docker", "Kubernetes"],
-        github: "https://github.com/princegarg001",
-        live: "https://github.com/princegarg001"
+        github: "https://github.com/princegarg001/System-Record--PulseLog-",
+        live: "https://princegarg001.github.io/System-Record--PulseLog-/"
       },
       ecoguard: {
         title: "EcoGuard – AI Sustainability Platform",
@@ -929,8 +928,9 @@
           "Structured an analytics dashboard providing clear trends of carbon savings and automated optimization audits."
         ],
         tech: ["LangChain", "GitLab API", "Python", "Docker", "AI Agents", "CI/CD Pipelines"],
-        github: "https://github.com/princegarg001",
-        live: "https://github.com/princegarg001"
+        github: "https://github.com/princegarg001/EcoGaurd",
+        live: "https://github.com/princegarg001/EcoGaurd",
+        liveText: "EcoGuard Docs"
       },
       campusconnect: {
         title: "CampusConnect – University Social Hub",
@@ -946,7 +946,7 @@
         ],
         tech: ["Flutter", "Supabase", "Firebase", "Sentry", "TypeScript", "Deno"],
         github: "https://github.com/princegarg001/UniCore",
-        live: "https://github.com/princegarg001/UniCore"
+        live: ""
       },
       pathpilot: {
         title: "PathPilot AI – Career Improvement Platform",
@@ -961,8 +961,9 @@
           "Secure Workspace: Provisioned Supabase PostgreSQL storage with Row-Level Security (RLS) policies protecting individual user records."
         ],
         tech: ["Flutter", "FastAPI", "Python", "Supabase", "Railway", "HuggingFace"],
-        github: "https://github.com/princegarg001/Path-Pilot-App",
-        live: "https://github.com/princegarg001/Path-Pilot-App"
+        github: "https://github.com/princegarg001/PathPilot-AI",
+        live: "https://github.com/princegarg001/PathPilot-AI/releases/tag/v1.0.0",
+        liveText: "View Releases"
       },
       nexusops: {
         title: "NexusOps – GitOps Enterprise Infrastructure",
@@ -977,8 +978,8 @@
           "Observability Suite: Configured Grafana charts and Prometheus rules to aggregate cluster metrics and track platform SLO indicators."
         ],
         tech: ["ArgoCD", "Kubernetes", "Istio Mesh", "Terraform", "AWS Bedrock", "Grafana", "Prometheus"],
-        github: "https://github.com/princegarg001/NexusOps",
-        live: "https://github.com/princegarg001/NexusOps"
+        github: "https://github.com/princegarg001/Nexusops",
+        live: ""
       }
     };
 
@@ -1065,7 +1066,8 @@
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
-          revealObserver.unobserve(entry.target);
+        } else {
+          entry.target.classList.remove('active');
         }
       });
     }, { 
@@ -1115,7 +1117,18 @@
 
           // Configure Links
           document.getElementById('modalGitHubLink').href = data.github;
-          document.getElementById('modalLiveLink').href = data.live;
+          
+          const liveLinkBtn = document.getElementById('modalLiveLink');
+          if (data.live) {
+            liveLinkBtn.href = data.live;
+            liveLinkBtn.style.display = 'inline-flex';
+            const textSpan = liveLinkBtn.querySelector('span');
+            if (textSpan) {
+              textSpan.textContent = data.liveText || "Live Demonstration";
+            }
+          } else {
+            liveLinkBtn.style.display = 'none';
+          }
 
           // Open Modal
           projectModal.classList.add('active');
